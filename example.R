@@ -211,8 +211,8 @@ flights %>% print(n = 5, width = Inf)
 # * `mutate()` to create new columns
 # * `summarise()` to aggregate
 
-# There are also some other, less important verbs, like 
-# `rename()` and `transmute()`, that are variations on 
+# There are also some other, less important verbs, like
+# `rename()` and `transmute()`, that are variations on
 # the main verbs.
 
 # In addition to verbs, dplyr also has the function
@@ -333,8 +333,8 @@ flights %>%
 # using `collect()` to return an R data frame.
 
 # For example, you can select the departure delay and
-# arrival delay columns from the `flights` dataset, 
-# randomly sample 5% of non-missing records, and return 
+# arrival delay columns from the `flights` dataset,
+# randomly sample 5% of non-missing records, and return
 # the result as an R data frame:
 
 delays_sample_df <- flights %>%
@@ -343,7 +343,7 @@ delays_sample_df <- flights %>%
   sdf_sample(fraction = 0.05, replacement = FALSE) %>%
   collect()
 
-# Then you can create a scatterplot showing the 
+# Then you can create a scatterplot showing the
 # relationship between departure delay and arrival delay:
 
 library(ggplot2)
@@ -359,8 +359,8 @@ ggplot(delays_sample_df, aes(x=dep_delay, y=arr_delay)) +
 
 # MLlib is Spark's machine learning library.
 
-# As an example, let's examine the relationship between 
-# departure delay and arrival delay using a linear 
+# As an example, let's examine the relationship between
+# departure delay and arrival delay using a linear
 # regression model.
 
 # First, create a Spark DataFrame with only the relevant

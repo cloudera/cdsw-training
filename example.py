@@ -101,7 +101,7 @@ print("Hello world!")
 # ## Using Apache Spark 2 with PySpark
 
 # CDSW provides a virtual gateway to the cluster, which
-# you can use to run Apache Spark jobs using PySpark, 
+# you can use to run Apache Spark jobs using PySpark,
 # Spark's Python API.
 
 # Before you connect to Spark: If you are using a secure
@@ -321,8 +321,8 @@ spark.sql("""
 # returning a pandas DataFrame.
 
 # For example, you can select the departure delay and
-# arrival delay columns from the `flights` dataset, 
-# randomly sample 5% of non-missing records, and return 
+# arrival delay columns from the `flights` dataset,
+# randomly sample 5% of non-missing records, and return
 # the result as a pandas DataFrame:
 
 delays_sample_pd = flights \
@@ -331,7 +331,7 @@ delays_sample_pd = flights \
   .sample(withReplacement=False, fraction=0.05) \
   .toPandas()
 
-# Then you can create a scatterplot showing the 
+# Then you can create a scatterplot showing the
 # relationship between departure delay and arrival delay:
 
 delays_sample_pd.plot.scatter(x="dep_delay", y="arr_delay")
@@ -344,8 +344,8 @@ delays_sample_pd.plot.scatter(x="dep_delay", y="arr_delay")
 
 # MLlib is Spark's machine learning library.
 
-# As an example, let's examine the relationship between 
-# departure delay and arrival delay using a linear 
+# As an example, let's examine the relationship between
+# departure delay and arrival delay using a linear
 # regression model.
 
 # First, create a Spark DataFrame with only the relevant
