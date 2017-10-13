@@ -127,7 +127,7 @@ from pyspark.sql import SparkSession
 # the Spark application:
 
 spark = SparkSession.builder \
-  .master("local") \
+  .master("yarn") \
   .appName("cdsw-training") \
   .getOrCreate()
 
