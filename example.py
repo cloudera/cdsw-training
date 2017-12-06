@@ -295,7 +295,14 @@ flights \
 # ### Using SQL Queries
 
 # Instead of using Spark DataFrame methods, you can
-# use a SQL query to achieve the same result:
+# use a SQL query to achieve the same result.
+
+# First you must create a temporary view with the
+# DataFrame you want to query:
+
+flights.createOrReplaceTempView("flights")
+
+# Then you can use SQL to query the DataFrame:
 
 spark.sql("""
   SELECT origin,
