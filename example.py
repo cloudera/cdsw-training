@@ -319,6 +319,12 @@ spark.sql("""
 # You can create data visualizations in CDSW using Python
 # plotting libraries such as Matplotlib.
 
+# When using Matplotlib, you might need to first use this
+# Jupyter magic command to ensure that the plots display
+# properly in CDSW:
+
+%matplotlib inline
+
 # To visualize data from a Spark DataFrame with
 # Matplotlib, you must first return the data as a pandas
 # DataFrame.
