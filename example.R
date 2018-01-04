@@ -102,7 +102,7 @@ system("hdfs dfs -put flights.csv flights/")
 # interface to Spark.
 
 # Install the sparklyr package from CRAN (if it is not
-# already installed). This may take several minutes:
+# already installed). This might take several minutes:
 
 if(!"sparklyr" %in% rownames(installed.packages())) {
   install.packages("sparklyr")
@@ -329,7 +329,7 @@ flights %>%
 # do this, use the `collect()` function.
 
 # Caution: When working with a large Spark DataFrame,
-# you may need to sample, filter, or aggregate before
+# you might need to sample, filter, or aggregate before
 # using `collect()` to return an R data frame.
 
 # For example, you can select the departure delay and

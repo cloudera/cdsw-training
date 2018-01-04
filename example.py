@@ -324,7 +324,7 @@ spark.sql("""
 # DataFrame.
 
 # Caution: When working with a large Spark DataFrame,
-# you may need to sample, filter, or aggregate before
+# you might need to sample, filter, or aggregate before
 # returning a pandas DataFrame.
 
 # For example, you can select the departure delay and
