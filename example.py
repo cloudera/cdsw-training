@@ -30,7 +30,7 @@ print("Hello world!")
 # can use the shell magic to issue operating system
 # commands:
 
-!ls -l
+!ls -A -l
 
 # For more details, see
 # [the documentation on Jupyter magic commands](https://www.cloudera.com/documentation/data-science-workbench/latest/topics/cdsw_jupyter.html).
