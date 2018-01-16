@@ -90,7 +90,7 @@ print("Hello world!")
 
 !hdfs dfs -mkdir flights
 
-# Upload the file into it:
+# Copy the file into it:
 
 !hdfs dfs -put flights.csv flights/
 

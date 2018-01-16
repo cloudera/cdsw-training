@@ -86,7 +86,7 @@ system("hdfs dfs -rm -r flights")
 
 system("hdfs dfs -mkdir flights")
 
-# Upload the file into it:
+# Copy the file into it:
 
 system("hdfs dfs -put flights.csv flights/")
 
