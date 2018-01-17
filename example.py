@@ -137,7 +137,7 @@ spark = SparkSession.builder \
 
 # ### Reading Data
 
-# Load the flights dataset from HDFS. This data is in CSV
+# Read the flights dataset from HDFS. This data is in CSV
 # format and includes a header row. Spark can infer the
 # schema automatically from the data:
 
