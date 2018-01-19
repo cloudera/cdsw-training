@@ -217,8 +217,7 @@ flights.select("carrier").distinct().show()
 # satisfy a Boolean expression.
 
 # To disambiguate column names and literal strings,
-# import and use the built-in functions `col()` and
-# `lit()`:
+# import and use the functions `col()` and `lit()`:
 
 from pyspark.sql.functions import col, lit
 
@@ -238,8 +237,8 @@ flights \
   .withColumn("on_time", col("arr_delay") <= 0) \
   .show()
 
-# To concatenate strings, import and use the built-in
-# function `concat()`:
+# To concatenate strings, import and use the function
+# `concat()`:
 
 from pyspark.sql.functions import concat
 
