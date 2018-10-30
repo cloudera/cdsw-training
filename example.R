@@ -235,7 +235,9 @@ flights %>% mutate(flight_code = paste0(carrier, flight))
 # expressions.
 
 # Use aggregation functions such as `n()`, `n_distinct()`,
-# `sum()`, and `mean()`:
+# `sum()`, and `mean()`. With some of these functions,
+# you must specify `na.rm = TRUE` to silence warnings
+# about missing values:
 
 flights %>% summarise(n = n())
 
@@ -249,7 +251,7 @@ flights %>%
   group_by(origin) %>%
   summarise(
     num_departures = n(),
-    avg_dep_delay = mean(dep_delay)
+    avg_dep_delay = mean(dep_delay, na.rm = TRUE)
   )
 
 # You can chain together multiple dplyr verbs:
@@ -259,7 +261,7 @@ flights %>%
   group_by(origin) %>%
   summarise(
     num_departures = n(),
-    avg_dep_delay = mean(dep_delay)
+    avg_dep_delay = mean(dep_delay, na.rm = TRUE)
   ) %>%
   arrange(avg_dep_delay)
 
