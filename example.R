@@ -173,16 +173,6 @@ flights %>% colnames()
 
 flights
 
-# Print the first five rows of data, for as many columns
-# as fit on the screen:
-
-flights %>% print(n = 5)
-
-# Print the first five rows of data, showing all the
-# columns even if rows wrap onto multiple lines:
-
-flights %>% print(n = 5, width = Inf)
-
 
 # ### Transforming Data Using dplyr Verbs
 
