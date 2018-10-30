@@ -151,20 +151,6 @@ flights <- spark_read_csv(
 # that this is not an R data frame—it is a pointer to a
 # Spark DataFrame.
 
-# Because of a bug in sparklyr
-# ([Issue #973](https://github.com/rstudio/sparklyr/issues/973))
-# some columns are imported as hex digits instead of
-# integers. The following code fixes this. Ignore this
-# code for now; it uses concepts that have not yet been
-# introduced:
-
-flights <- flights %>% dplyr::mutate_if(
-  ~ is.raw(.),
-  as.integer
-) %>% dplyr::select(
-  !! colnames(flights)
-)
-
 
 # ### Inspecting Data
 
