@@ -377,7 +377,7 @@ summary(model)
 # sample:
 
 pred <- model %>%
-  sdf_predict(samples$test)
+  ml_predict(samples$test)
 
 # Evaluate the model on the test sample by computing
 # R-squared, which gives the fraction of the variance
