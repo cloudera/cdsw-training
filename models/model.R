@@ -17,12 +17,12 @@
 # Define the function that will be called when the
 # model is run:
 
-pred_arr_time = function(args) {
+pred_arr_time <- function(args) {
   sched_arr_time <- args$sched_arr_time
   sched_arr_hour <- as.integer(sched_arr_time / 100)
   sched_arr_min <- sched_arr_time %% 100
   dep_delay <- args$dep_delay
-  pred_arr_delay = dep_delay * 1.02 - 5.9
+  pred_arr_delay <- dep_delay * 1.02 - 5.9
   pred_arr_time <- as.POSIXct(
     paste0("2019-01-01 ", sched_arr_hour, ":", sched_arr_min)
   ) + (pred_arr_delay * 60)
