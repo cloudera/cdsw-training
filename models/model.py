@@ -34,3 +34,16 @@ def pred_arr_time(args):
   result = int(str(pred_arr_time.hour)
     + str(pred_arr_time.minute).zfill(2))
   return {'pred_arr_time': result}
+
+
+# Example input:
+
+#```
+#{"sched_arr_time": 724, "dep_delay": 43}
+#```
+
+# Example output:
+
+#```
+#{"pred_arr_time": 801}
+#```

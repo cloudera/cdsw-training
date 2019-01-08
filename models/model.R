@@ -29,3 +29,22 @@ pred_arr_time = function(args) {
   result <- as.integer(format(pred_arr_time, "%H%M"))
   list(pred_arr_time = result)
 }
+
+
+# Example input as an R list:
+
+#```r
+#list(sched_arr_time = 724, dep_delay = 43)
+#```
+
+# Example input in JSON:
+
+#```
+#{"sched_arr_time": 724, "dep_delay": 43}
+#```
+
+# Example output in JSON:
+
+#```
+#{"pred_arr_time": 801}
+#```
