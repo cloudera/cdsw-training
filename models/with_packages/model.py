@@ -22,8 +22,8 @@ import pendulum
 # model is run:
 
 def pred_arr_time(args):
-  sched_arr_time = args['sched_arr_time']
-  dep_delay = args['dep_delay']
+  sched_arr_time = args["sched_arr_time"]
+  dep_delay = args["dep_delay"]
   sched_arr_hour = int(sched_arr_time / 100)
   sched_arr_min = sched_arr_time % 100
   pred_arr_delay = dep_delay * 1.02 - 5.9
@@ -32,5 +32,5 @@ def pred_arr_time(args):
     .add(hours=sched_arr_hour) \
     .add(minutes=sched_arr_min) \
     .add(minutes=pred_arr_delay)
-  result = int(pred_arr_time.format('HHmm'))
-  return {'pred_arr_time': result}
+  result = int(pred_arr_time.format("HHmm"))
+  return {"pred_arr_time": result}
