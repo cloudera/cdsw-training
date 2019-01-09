@@ -18,6 +18,9 @@
 
 from datetime import datetime, timedelta
 
+# (The `datetime` module is part of the the standard 
+# library included with Python.)
+
 # Define the function that will be called when the
 # model is run:
 
