@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Example build script used to customize the engine 
-# environment for CDSW Experiments and Models
+# environment for CDSW Models
 
 # This script file must be moved to the project's root
 # directory for CDSW to detect it.
